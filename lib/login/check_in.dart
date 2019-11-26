@@ -54,12 +54,12 @@ class _CheckInFormState extends State<CheckInForm>{
           SizedBox(height: 16.0),
           TextFormField(
             decoration: InputDecoration(
-              labelText: 'Password',
+              labelText: 'ClassID',
               labelStyle: TextStyle(color: Colors.white)
             ),
             validator: (String value) {
               if (value.trim().isEmpty) {
-                return 'Password is required.';
+                return 'ClassID is required.';
               }
             },
           ),
