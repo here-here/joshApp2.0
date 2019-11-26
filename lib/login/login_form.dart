@@ -47,8 +47,14 @@ class _LoginFormState extends State<LoginForm> {
                     TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Username',
-                        fillColor: Colors.white,
-                        filled: true
+                        hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
+                        fillColor: Colors.black,
+                        focusColor: Colors.white,
+                        hoverColor: Colors.white,
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
+                        )
                       ),
                       controller: _usernameController,
                     ),
@@ -59,18 +65,20 @@ class _LoginFormState extends State<LoginForm> {
                       TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Password',
+                        hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
                         border: InputBorder.none,
-                        fillColor: Colors.white,
+                        fillColor: Colors.black,
                         focusColor: Colors.white,
                         hoverColor: Colors.white,
                          //labelStyle: headerTextStyle.copyWith(color: Colors.white),
                          //hintStyle: headerTextStyle.copyWith(color: Colors.white),
                          //prefixIcon: Icon(Icons.vpn_key),
                         // fillColor: Colors.grey,
-                         filled: true,
-
-                        ),
-                         
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
+                          )
+                        ),   
                       controller: _passwordController,
                       obscureText: true,
                       ),

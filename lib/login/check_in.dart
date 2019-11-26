@@ -1,35 +1,36 @@
-export 'register.dart';
+export 'check_in.dart';
 import 'package:flutter/material.dart';
 
-class Register extends StatelessWidget{
+class CheckIn extends StatelessWidget{
   @override
   Widget build(BuildContext context)
   {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        title: Text('Check In'),
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.black,
       ),
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0),
-          child: RegisterForm()
+          child: CheckInForm()
         )
       )
     );
   }
 }
 
-class RegisterForm extends StatefulWidget{
-  RegisterForm({Key key}) : super(key: key);
+class CheckInForm extends StatefulWidget{
+  CheckInForm({Key key}) : super(key: key);
 
   @override
-  _RegisterFormState createState() => _RegisterFormState();
+  _CheckInFormState createState() => _CheckInFormState();
 }
 
-class _RegisterFormState extends State<RegisterForm>{
+class _CheckInFormState extends State<CheckInForm>{
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
@@ -41,11 +42,12 @@ class _RegisterFormState extends State<RegisterForm>{
         children: <Widget>[
           TextFormField(
             decoration: InputDecoration(
-              labelText: 'Username'
+              labelText: 'PID',
+              labelStyle: TextStyle(color: Colors.white)
             ),
             validator: (String value) {
               if (value.trim().isEmpty) {
-                return 'Username is required.';
+                return 'PID is required.';
               }
             },
           ),
@@ -53,6 +55,7 @@ class _RegisterFormState extends State<RegisterForm>{
           TextFormField(
             decoration: InputDecoration(
               labelText: 'Password',
+              labelStyle: TextStyle(color: Colors.white)
             ),
             validator: (String value) {
               if (value.trim().isEmpty) {
@@ -64,9 +67,9 @@ class _RegisterFormState extends State<RegisterForm>{
             children: <Widget>[
               Spacer(),
               OutlineButton(
-                highlightedBorderColor: Colors.black,
+                highlightedBorderColor: Colors.white,
                 onPressed: _submit,
-                child: Text('Register')
+                child: Text('Check In', style: TextStyle(color: Colors.white))
               )
             ],
           )
@@ -77,6 +80,9 @@ class _RegisterFormState extends State<RegisterForm>{
 
   void _submit() {
     _formKey.currentState.validate();
+
+    // Check the student in
+    
   }
 }
 

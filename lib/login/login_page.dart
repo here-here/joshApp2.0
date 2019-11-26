@@ -6,6 +6,8 @@ import 'package:user_repository/user_repository.dart';
 
 import 'package:flutter_login/authentication/authentication.dart';
 import 'package:flutter_login/login/login.dart';
+import 'check_in.dart';
+
 
 class LoginPage extends StatelessWidget {
   final UserRepository userRepository;
@@ -54,11 +56,12 @@ class LoginPage extends StatelessWidget {
                                   ..color = Colors.black,
                               )
                             ),
+                            // White text for filler
                             Text(
                               'Here Here',
                               style: TextStyle(
                                 fontSize: 60,
-                                color: Colors.white
+                                color: Colors.yellow[400]
                               )
                             )
                           ],
@@ -70,6 +73,27 @@ class LoginPage extends StatelessWidget {
               Center(
                 child:
                   LoginForm()
+              ),
+              Center(
+                child:
+                  Padding(
+                    padding: EdgeInsets.all(110),
+                    child:
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CheckIn(),
+                              settings: RouteSettings(),
+                            )
+                          );
+                        },
+                        child:
+                          Text('Check In', style: TextStyle(color: Colors.white))
+                      )
+                  ) 
+                  //CheckIn()
               )
             ],
 
