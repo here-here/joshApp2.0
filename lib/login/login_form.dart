@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_login/home/text.dart';
 import 'package:flutter_login/login/login.dart';
+import 'package:flutter_login/register/register.dart';
 
 class LoginForm extends StatefulWidget {
   @override
@@ -41,10 +42,14 @@ class _LoginFormState extends State<LoginForm> {
               Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 0.0),
+                    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
                     child:
                     TextFormField(
-                      decoration: InputDecoration(labelText: 'username'),
+                      decoration: InputDecoration(
+                        hintText: 'Username',
+                        fillColor: Colors.white,
+                        filled: true
+                      ),
                       controller: _usernameController,
                     ),
                   ),
@@ -53,12 +58,13 @@ class _LoginFormState extends State<LoginForm> {
                     child:                   
                       TextFormField(
                       decoration: InputDecoration(
-                        
+                        hintText: 'Password',
                         border: InputBorder.none,
-                        focusColor: Colors.black,
-                        hoverColor: Colors.black,
-                         labelStyle: headerTextStyle.copyWith(color: Colors.white),
-                         hintStyle: headerTextStyle.copyWith(color: Colors.white),
+                        fillColor: Colors.white,
+                        focusColor: Colors.white,
+                        hoverColor: Colors.white,
+                         //labelStyle: headerTextStyle.copyWith(color: Colors.white),
+                         //hintStyle: headerTextStyle.copyWith(color: Colors.white),
                          //prefixIcon: Icon(Icons.vpn_key),
                         // fillColor: Colors.grey,
                          filled: true,
@@ -73,6 +79,18 @@ class _LoginFormState extends State<LoginForm> {
                     onPressed:
                         state is! LoginLoading ? _onLoginButtonPressed : null,
                     child: Text('Login'),
+                  ),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Register(),
+                          settings: RouteSettings(),
+                        )
+                      );
+                    },
+                    child: Text('Don\'t have an account? Register now', style: TextStyle(color: Colors.blue))
                   ),
                   Container(
                     child: state is LoginLoading

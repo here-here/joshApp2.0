@@ -31,14 +31,39 @@ class LoginPage extends StatelessWidget {
                 child: SizedBox(
                   width: double.infinity,
                   height: 300,
-                  child:
-                   Container(
-                    color: Colors.amber[600],
-                    child:
-                      Center(
-                        child:
-                          Text("Here Here", style: headerTextStyle.copyWith(fontSize: 50),),
-                        ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/knighttro.jpg'),
+                        fit: BoxFit.cover
+                      )
+                    ),
+                    //color: Colors.amber[600],
+                    child: Center(
+                      child: 
+                        Stack(
+                          children: <Widget>[
+                            // Stroked text as border
+                            Text(
+                              "Here Here",
+                              style: TextStyle(
+                                fontSize: 60,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 6
+                                  ..color = Colors.black,
+                              )
+                            ),
+                            Text(
+                              'Here Here',
+                              style: TextStyle(
+                                fontSize: 60,
+                                color: Colors.white
+                              )
+                            )
+                          ],
+                        )
+                    ),
                   ),
                 ),
               ),
@@ -51,6 +76,7 @@ class LoginPage extends StatelessWidget {
           ),
           
       ),
+      backgroundColor: Colors.black,
     );
   }
 }
