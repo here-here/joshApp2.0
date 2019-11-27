@@ -25,12 +25,12 @@ class User {
 }
 
 class Body {
-    String uid;
-    String pass;
+    String username;
+    String password;
 
     Body({
-        this.uid,
-        this.pass,
+        this.username,
+        this.password,
     });
 
     factory Body.fromRawJson(String str) => Body.fromJson(json.decode(str));
@@ -38,12 +38,12 @@ class Body {
     String toRawJson() => json.encode(toJson());
 
     factory Body.fromJson(Map<String, dynamic> json) => Body(
-        uid: json["uid"],
-        pass: json["pass"],
+        username: json["username"],
+        password: json["password"],
     );
 
     Map<String, dynamic> toJson() => {
-        "uid": uid,
-        "pass": pass,
+        "username": username,
+        "password": password,
     };
 }

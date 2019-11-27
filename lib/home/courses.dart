@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-
+import 'package:user_repository/fileIO.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -10,6 +10,10 @@ import 'dart:math';
 
 
 Future<List<Course>> fetchCourses(http.Client client) async {
+    final token = await readToken().timeout(const Duration(milliseconds: 500),); 
+    print("-------------");
+    print(token);
+      print("-------------");
   final response =
       await client.get('https://api.myjson.com/bins/rtv2k');
 

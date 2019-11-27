@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/space/bloc/examples/flutter_login/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/media/space/joshApp2.0/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/media/space/bloc/examples/flutter_login/android/app/src/main/res/values/styles.xml",
+                    "source": "/media/space/joshApp2.0/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

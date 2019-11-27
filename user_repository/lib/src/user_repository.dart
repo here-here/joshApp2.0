@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import '../fileIO.dart';
 import 'package:meta/meta.dart';
 import 'package:flutter/material.dart';
 //import 'package:native_widgets/native_widgets.dart';
@@ -20,29 +21,38 @@ class UserRepository {
     @required String username,
     @required String password,
   }) async {
-    String url = "https://qvrptaji88.execute-api.us-east-2.amazonaws.com/apple";
-    Body b = Body(pass: password, uid: username);
+    String url = "http://10.0.2.2:80/api/classes/token/";
+    Body b = Body(password: password, username: username);
     User u = User(body: b, type: "login");
-     var response = await post(url, u.toRawJson(), "token123"  );
+
+    var bod = b.toJson();
+
+     var response = await post(url, b.toRawJson(), "");
     await Future.delayed(Duration(seconds: 1));
     int statusCode = response.statusCode;
+    print(response.body);
 
     print(statusCode);
     print("------------");
   // check and respond
     String body = response.body;
     dynamic jbody = jsonDecode(body);
-    if(jbody['statusCode'] !=200)
-      throw ApiError();
 
     if(statusCode != 200)
       throw ApiError();
-    else
-      return jbody['body']['token'];
+    else{
+      writeToken(jbody['access'].toString());
+      writeRefresh(jbody['refresh'].toString());
+      return jbody['access'].toString();
+    }
+
+    
+      
         }
 
 
-  
+
+
 
 
   Future<void> deleteToken() async {
@@ -53,8 +63,11 @@ class UserRepository {
 
   Future<void> persistToken(String token) async {
     /// write to keystore/keychain
-    await Future.delayed(Duration(seconds: 1));
-    return;
+    /// 
+    /// 
+    await writeToken(token);
+
+ 
   }
 
   Future<bool> hasToken() async {
