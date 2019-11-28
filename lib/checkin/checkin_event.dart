@@ -7,17 +7,17 @@ abstract class CheckinEvent extends Equatable {
 
 class CheckinButtonPressed extends CheckinEvent {
   final String pid;
-  final String classid;
+  final String class_name;
 
   const CheckinButtonPressed({
     @required this.pid,
-    @required this.classid,
+    @required this.class_name,
   });
 
   @override
-  List<Object> get props => [pid, classid];
+  List<Object> get props => [pid, class_name];
 
   @override
   String toString() =>
-      'CheckinButtonPressed { pid: $pid, classid: $classid }';
+      'CheckinButtonPressed { pid: $pid, class_name: $class_name }';
 }

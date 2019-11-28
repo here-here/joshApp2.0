@@ -30,8 +30,8 @@ class CheckinBloc extends Bloc<CheckinEvent, CheckinState> {
         final checkin_result = await checkInRepository.checkin(
           pid: event.pid,
           hwid: "hey",
-          token: "", //teacher's session token
-          classid: event.classid,
+          token: "newtoken", //teacher's session token
+          class_name: "kdjal",
           name: "Name isn't passed in"
         );
        // authenticationBloc.add(CheckedIn(token: token));

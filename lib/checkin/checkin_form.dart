@@ -19,7 +19,7 @@ class _checkinFormState extends State<CheckinForm> {
       BlocProvider.of<CheckinBloc>(context).add(
         CheckinButtonPressed(
           pid: _pidController.text,
-          classid: _classController.text,
+          class_name: _classController.text,
         ),
       );
     }

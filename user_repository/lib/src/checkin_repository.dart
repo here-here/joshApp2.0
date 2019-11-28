@@ -14,7 +14,7 @@ class CheckInRepository {
 
   Future<String> checkin({
     @required String token,
-    @required String classid,
+    @required String class_name,
     @required String pid,
     @required String hwid,
     @required String name,
@@ -24,7 +24,7 @@ class CheckInRepository {
     String url = "http://10.0.2.2:80/api/classes/validateToken/";
    
    
-   Body b = Body(token: token, name: name, hwid: hwid, pid: pid);
+   Body b = Body(token: token, name: name, class_name:class_name, hwid: hwid, pid: pid);
     var bod = json.encode(b.toJson());
      var response = await post(url,bod, "");
     await Future.delayed(Duration(seconds: 1));
@@ -49,11 +49,11 @@ class CheckInRepository {
 
 
      Future<dynamic> post(String url, String json, String token) async {
-    final String _token = token ?? "";
-    Map<String, String> headers = {
-      HttpHeaders.contentTypeHeader: "application/json", 
-      HttpHeaders.authorizationHeader: "Bearer $token",
-    };
+    final String _token = token ?? "  jk";
+    Map<String,String> headers = {
+    'Content-type' : 'application/json', 
+    'Accept': 'application/json',
+    };  
 
   // make POST request
   http.Response response = await http.post(url, headers: headers, body: json);
