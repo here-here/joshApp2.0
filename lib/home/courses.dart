@@ -6,44 +6,56 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'screen_args.dart';
 import 'broadcast.dart';
-import 'dart:math';
+import 'dart:io';
+//import 'package:native_widgets/native_widgets.dart';
+//import 'package:scoped_model/scoped_model.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:uuid/uuid.dart';
 
 
 Future<List<Course>> fetchCourses(http.Client client) async {
     final token = await readToken().timeout(const Duration(milliseconds: 500),); 
+      Map<String, String> headers = {
+      HttpHeaders.contentTypeHeader: "application/json", 
+      HttpHeaders.authorizationHeader: "Bearer $token",
+    };
+
     print("-------------");
     print(token);
       print("-------------");
   final response =
-      await client.get('https://api.myjson.com/bins/rtv2k');
+      await client.get('http://10.0.2.2:80/api/classes/classes/',headers: headers);
+    Map<String, String> args = {
+      "body": response.body, 
+      "token" : token
+    };
 
   // Use the compute function to run parseCourses in a separate isolate
-  return compute(parseCourses, response.body);
+  return compute(parseCourses,args );
 }
 
 // A function that will convert a response body into a List<Course>
-List<Course> parseCourses(String responseBody) {
-  final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
+List<Course> parseCourses(Map<String,String> args) {
+  final body = jsonDecode(args["body"]);
+  final lst = body["classes"];
+  //final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
+  final List<String> parsed = (lst as List<dynamic>).cast<String>();
 
-  return parsed.map<Course>((json) => Course.fromJson(json)).toList();
+  return parsed.map<Course>((json) => Course(title: json, token: args["token"])).toList();
 }
 
 class Course {
-  final int userId;
-  final int id;
   final String title;
-  final String body;
+  final String token;
 
-  Course({this.userId, this.id, this.title, this.body});
+  Course({this.title, this.token});
+  
 
-  factory Course.fromJson(Map<String, dynamic> json) {
-    return Course(
-      userId: json['userId'] as int,
-      id: json['id'] as int,
-      title: json['title'] as String,
-      body: json['body'] as String,
-    );
-  }
+  // factory Course.fromJson(Map<String, dynamic> json) {
+  //   return Course(
+  //     title: json['name'] as String,
+  //   );
+  
 }
 
 
@@ -103,7 +115,7 @@ class CoursesList extends StatelessWidget {
                     children: <Widget>[
                       ListTile(
                         title: Text(Courses[index].title, style: headerTextStyle,overflow: TextOverflow.ellipsis,),
-                        subtitle: Text(Courses[index].body, style: subHeaderTextStyle),
+                        subtitle: Text("Place holder", style: subHeaderTextStyle),
                       ),
                       ButtonTheme.bar(
                         // make buttons use the appropriate styles for cards
@@ -125,7 +137,7 @@ class CoursesList extends StatelessWidget {
                                       settings: RouteSettings(
                                         arguments: ScreenArguments(
                                           Courses[index].title,
-                                          Courses[index].body
+                                          Courses[index].token
                                         ),
                                       ),
                                     ),
@@ -148,7 +160,7 @@ class CoursesList extends StatelessWidget {
                                       settings: RouteSettings(
                                         arguments: ScreenArguments(
                                           Courses[index].title,
-                                          Courses[index].body
+                                          Courses[index].token,
                                         ),
                                       ),
                                     ),
