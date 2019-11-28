@@ -19,6 +19,13 @@ class CheckinPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: new AppBar(
+        backgroundColor: Colors.black38,
+        title: Text(
+            "Checkin",
+            style: headerTextStyle,
+        ),
+      ),
       body: BlocProvider(
         builder: (context) {
           return CheckinBloc(
@@ -32,11 +39,8 @@ class CheckinPage extends StatelessWidget {
               Center(
                 child: SizedBox(
                   width: double.infinity,
-                  height: 300,
+                  height: 200,
                   child: Container(
-
-                   
-                
                     color: Colors.amber[600],
                     child: Center(
                       child: 
@@ -45,7 +49,7 @@ class CheckinPage extends StatelessWidget {
                             // Stroked text as border
                             Text(
                               "Check into class",
-                              style: headerTextStyle
+                              style: headerTextStyle.copyWith(fontSize: 30)
                             ),
                             // White text for filler
                            
@@ -64,7 +68,7 @@ class CheckinPage extends StatelessWidget {
           ),
           
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
     );
   }
 }

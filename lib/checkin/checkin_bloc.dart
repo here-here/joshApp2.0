@@ -27,6 +27,7 @@ class CheckinBloc extends Bloc<CheckinEvent, CheckinState> {
       try {
 
         /// scan for teacher here
+        //final session_token = await bluetoothstuff.scanforsession();
         final checkin_result = await checkInRepository.checkin(
           pid: event.pid,
           hwid: "hey",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_login/home/text.dart';
@@ -8,6 +9,80 @@ import 'package:flutter_login/authentication/authentication.dart';
 import 'package:flutter_login/login/login.dart';
 import 'package:flutter_login/checkin/checkin.dart';
 import 'check_in.dart';
+
+class ShowHideForm extends StatefulWidget {
+  @override
+  ShowHideFormState createState() {
+    return new ShowHideFormState();
+  }
+}
+
+
+
+class ShowHideFormState extends State<ShowHideForm>{
+  bool _canShow = false;
+  CheckInRepository checkInRepository;
+
+  ShowHideFormState(){
+    this.checkInRepository = new CheckInRepository();
+  }
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return
+      Center(
+      child:
+        Column(
+          children: <Widget>[
+            SizedBox(
+                width: double.infinity,
+              child:
+                ButtonTheme(
+                  height: 120,
+
+                  child: FlatButton.icon(
+                    color: Colors.green,
+                      onPressed: (){
+                        setState(() => _canShow= !_canShow);
+                        },
+                      icon:new Icon(Icons.vpn_key),
+                      label: Text(!_canShow ? "Login in" : "Hide ",style: headerTextStyle))
+                )
+            ),
+            !_canShow
+              ? SizedBox(
+                width: double.infinity,
+                child:
+                ButtonTheme(
+                    height: 120,
+
+                    child: FlatButton.icon(
+                        color: Colors.green,
+                        onPressed: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => CheckinPage(checkInRepository: checkInRepository),
+                                settings: RouteSettings(),
+                              )
+                          );
+                        },
+                        icon:new Icon(Icons.person),
+                        label: Text( "Check in",style: headerTextStyle))
+                ),
+              )
+              : SizedBox(),
+
+            _canShow
+                ? LoginForm()
+                : SizedBox()
+          ],
+        )
+      );
+      }
+
+
+  }
 
 
 class LoginPage extends StatelessWidget {
@@ -60,27 +135,11 @@ class LoginPage extends StatelessWidget {
               ),
               Center(
                 child:
-                  LoginForm()
+                 ShowHideForm()
               ),
               Center(
                 child:
-                  Padding(
-                    padding: EdgeInsets.all(110),
-                    child:
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => CheckinPage(checkInRepository: checkInRepository),
-                              settings: RouteSettings(),
-                            )
-                          );
-                        },
-                        child:
-                          Text('Check In', style: TextStyle(color: Colors.black))
-                      )
-                  ) 
+                    SizedBox()
                   //CheckIn()
               )
             ],
@@ -92,3 +151,18 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+//
+//GestureDetector(
+//onTap: () {
+//Navigator.push(
+//context,
+//MaterialPageRoute(
+//builder: (context) => CheckinPage(checkInRepository: checkInRepository),
+//settings: RouteSettings(),
+//)
+//);
+//},
+//child:
+//Text('Check In', style: TextStyle(color: Colors.black))
+//)

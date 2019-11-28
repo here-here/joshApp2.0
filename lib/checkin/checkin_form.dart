@@ -52,9 +52,6 @@ class _checkinFormState extends State<CheckinForm> {
                         focusColor: Colors.white,
                         hoverColor: Colors.white,
                         filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
-                        )
                       ),
                       controller: _pidController,
                     ),
@@ -67,17 +64,12 @@ class _checkinFormState extends State<CheckinForm> {
                         hintText: 'Class ID',
                         hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
                         border: InputBorder.none,
-                         //labelStyle: headerTextStyle.copyWith(color: Colors.white),
-                         //hintStyle: headerTextStyle.copyWith(color: Colors.white),
-                         //prefixIcon: Icon(Icons.vpn_key),
-                        // fillColor: Colors.grey,
                         filled: true,
                         enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
                           )
                         ),   
                       controller: _classController,
-                      obscureText: true,
                       ),
                     ),
                   RaisedButton(

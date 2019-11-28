@@ -19,7 +19,7 @@ class TeacherView extends StatelessWidget {
     
     return Scaffold(
       key: _scaffoldKey,
-                appBar: new AppBar(
+      appBar: new AppBar(
         backgroundColor: Colors.black38,
         title: new Text("Hi, Teacher  "),
         leading: new IconButton(
