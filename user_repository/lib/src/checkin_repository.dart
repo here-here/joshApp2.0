@@ -29,18 +29,11 @@ class CheckInRepository {
      var response = await post(url,bod, "");
     await Future.delayed(Duration(seconds: 1));
     int statusCode = response.statusCode;
-    print(response.body);
-
-    print(statusCode);
-    print("------------");
-  // check and respond
-    String body = response.body;
-    dynamic jbody = jsonDecode(body);
 
     if(statusCode != 200)
       throw ApiError();
     else{
-	return " ";
+	return " Success";
     }
 
     
