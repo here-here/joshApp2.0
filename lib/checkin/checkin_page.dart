@@ -5,17 +5,15 @@ import 'package:flutter_login/home/text.dart';
 import 'package:user_repository/user_repository.dart';
 
 import 'package:flutter_login/authentication/authentication.dart';
-import 'package:flutter_login/login/login.dart';
 import 'package:flutter_login/checkin/checkin.dart';
 import 'check_in.dart';
 
 
-class LoginPage extends StatelessWidget {
-  final UserRepository userRepository;
+class CheckinPage extends StatelessWidget {
   final CheckInRepository checkInRepository;
 
-  LoginPage({Key key, @required this.userRepository, @required this.checkInRepository})
-      : assert(userRepository != null),
+  CheckinPage({Key key, @required this.checkInRepository})
+      : assert(checkInRepository != null),
         super(key: key);
 
   @override
@@ -23,9 +21,9 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: BlocProvider(
         builder: (context) {
-          return LoginBloc(
+          return CheckinBloc(
             authenticationBloc: BlocProvider.of<AuthenticationBloc>(context),
-            userRepository: userRepository,
+            checkInRepository: checkInRepository,
           );
         },
         child:
@@ -36,7 +34,9 @@ class LoginPage extends StatelessWidget {
                   width: double.infinity,
                   height: 300,
                   child: Container(
+
                    
+                
                     color: Colors.amber[600],
                     child: Center(
                       child: 
@@ -44,14 +44,11 @@ class LoginPage extends StatelessWidget {
                           children: <Widget>[
                             // Stroked text as border
                             Text(
-                              "Here Here",
-                              style: headerTextStyle.copyWith(fontSize: 60)
+                              "Check into class",
+                              style: headerTextStyle
                             ),
                             // White text for filler
-                            Text(
-                              'Here Here',
-                              style: headerTextStyle.copyWith(fontSize: 60)
-                            )
+                           
                           ],
                         )
                     ),
@@ -60,35 +57,14 @@ class LoginPage extends StatelessWidget {
               ),
               Center(
                 child:
-                  LoginForm()
-              ),
-              Center(
-                child:
-                  Padding(
-                    padding: EdgeInsets.all(110),
-                    child:
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => CheckinPage(checkInRepository: checkInRepository),
-                              settings: RouteSettings(),
-                            )
-                          );
-                        },
-                        child:
-                          Text('Check In', style: TextStyle(color: Colors.black))
-                      )
-                  ) 
-                  //CheckIn()
+                  CheckinForm()
               )
             ],
 
           ),
           
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey,
     );
   }
 }

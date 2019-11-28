@@ -34,21 +34,23 @@ class SimpleBlocDelegate extends BlocDelegate {
 void main() {
   BlocSupervisor.delegate = SimpleBlocDelegate();
   final userRepository = UserRepository();
+  final checkInRepository = CheckInRepository();
   runApp(
     BlocProvider<AuthenticationBloc>(
       builder: (context) {
-        return AuthenticationBloc(userRepository: userRepository)
+        return AuthenticationBloc(userRepository: userRepository, )
           ..add(AppStarted());
       },
-      child: App(userRepository: userRepository),
+      child: App(userRepository: userRepository, checkInRepository: checkInRepository,),
     ),
   );
 }
 
 class App extends StatelessWidget {
   final UserRepository userRepository;
+  final CheckInRepository checkInRepository;
 
-  App({Key key, @required this.userRepository}) : super(key: key);
+  App({Key key, @required this.userRepository, @required this.checkInRepository}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +61,7 @@ class App extends StatelessWidget {
             return TeacherView();
           }
           if (state is AuthenticationUnauthenticated) {
-            return LoginPage(userRepository: userRepository);
+            return LoginPage(userRepository: userRepository, checkInRepository: checkInRepository);
           }
           if (state is AuthenticationLoading) {
             return LoadingIndicator();

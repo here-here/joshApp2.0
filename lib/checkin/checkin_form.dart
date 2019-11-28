@@ -1,32 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_login/home/text.dart';
-import 'package:flutter_login/login/login.dart';
+import 'package:flutter_login/checkin/checkin.dart';
 import 'package:flutter_login/register/register.dart';
 
-class LoginForm extends StatefulWidget {
+class CheckinForm extends StatefulWidget {
   @override
-  State<LoginForm> createState() => _LoginFormState();
+  State<CheckinForm> createState() => _checkinFormState();
 }
 
-class _LoginFormState extends State<LoginForm> {
-  final _usernameController = TextEditingController();
-  final _passwordController = TextEditingController();
+class _checkinFormState extends State<CheckinForm> {
+  final _pidController = TextEditingController();
+  final _classController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    _onLoginButtonPressed() {
-      BlocProvider.of<LoginBloc>(context).add(
-        LoginButtonPressed(
-          username: _usernameController.text,
-          password: _passwordController.text,
+    _onCheckinButtonPressed() {
+      BlocProvider.of<CheckinBloc>(context).add(
+        CheckinButtonPressed(
+          pid: _pidController.text,
+          classid: _classController.text,
         ),
       );
     }
 
-    return BlocListener<LoginBloc, LoginState>(
+    return BlocListener<CheckinBloc, CheckinState>(
       listener: (context, state) {
-        if (state is LoginFailure) {
+        if (state is CheckinFailure) {
           Scaffold.of(context).showSnackBar(
             SnackBar(
               content: Text('${state.error}'),
@@ -35,7 +35,7 @@ class _LoginFormState extends State<LoginForm> {
           );
         }
       },
-      child: BlocBuilder<LoginBloc, LoginState>(
+      child: BlocBuilder<CheckinBloc, CheckinState>(
         builder: (context, state) {
           return Form(
             child:
@@ -46,8 +46,9 @@ class _LoginFormState extends State<LoginForm> {
                     child:
                     TextFormField(
                       decoration: InputDecoration(
-                        hintText: 'Username',
+                        hintText: 'PID',
                         hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
+                      //  fillColor: Colors.black,
                         focusColor: Colors.white,
                         hoverColor: Colors.white,
                         filled: true,
@@ -55,7 +56,7 @@ class _LoginFormState extends State<LoginForm> {
                           borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
                         )
                       ),
-                      controller: _usernameController,
+                      controller: _pidController,
                     ),
                   ),
                   Padding(
@@ -63,42 +64,30 @@ class _LoginFormState extends State<LoginForm> {
                     child:                   
                       TextFormField(
                       decoration: InputDecoration(
-                        hintText: 'Password',
+                        hintText: 'Class ID',
                         hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
                         border: InputBorder.none,
-                        focusColor: Colors.white,
-                        hoverColor: Colors.white,
                          //labelStyle: headerTextStyle.copyWith(color: Colors.white),
                          //hintStyle: headerTextStyle.copyWith(color: Colors.white),
                          //prefixIcon: Icon(Icons.vpn_key),
                         // fillColor: Colors.grey,
                         filled: true,
-
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
+                          )
                         ),   
-                      controller: _passwordController,
+                      controller: _classController,
                       obscureText: true,
                       ),
                     ),
                   RaisedButton(
                     onPressed:
-                        state is! LoginLoading ? _onLoginButtonPressed : null,
-                    child: Text('Login'),
+                        state is! CheckinLoading ? _onCheckinButtonPressed : null,
+                    child: Text('checkin'),
                   ),
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Register(),
-                          settings: RouteSettings(),
-                        )
-                      );
-                    },
-                    child: Text('Don\'t have an account? Register now', style: TextStyle(color: Colors.blue))
-                  ),
-                  
+                 
                   Container(
-                    child: state is LoginLoading
+                    child: state is CheckinLoading
                         ? CircularProgressIndicator()
                         : null,
                   ),

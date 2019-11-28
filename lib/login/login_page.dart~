@@ -12,9 +12,8 @@ import 'check_in.dart';
 
 class LoginPage extends StatelessWidget {
   final UserRepository userRepository;
-  final CheckInRepository checkInRepository;
 
-  LoginPage({Key key, @required this.userRepository, @required this.checkInRepository})
+  LoginPage({Key key, @required this.userRepository})
       : assert(userRepository != null),
         super(key: key);
 
@@ -36,8 +35,13 @@ class LoginPage extends StatelessWidget {
                   width: double.infinity,
                   height: 300,
                   child: Container(
-                   
-                    color: Colors.amber[600],
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/knighttro.jpg'),
+                        fit: BoxFit.cover
+                      )
+                    ),
+                    //color: Colors.amber[600],
                     child: Center(
                       child: 
                         Stack(
@@ -45,12 +49,21 @@ class LoginPage extends StatelessWidget {
                             // Stroked text as border
                             Text(
                               "Here Here",
-                              style: headerTextStyle.copyWith(fontSize: 60)
+                              style: TextStyle(
+                                fontSize: 60,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 6
+                                  ..color = Colors.black,
+                              )
                             ),
                             // White text for filler
                             Text(
                               'Here Here',
-                              style: headerTextStyle.copyWith(fontSize: 60)
+                              style: TextStyle(
+                                fontSize: 60,
+                                color: Colors.yellow[400]
+                              )
                             )
                           ],
                         )
@@ -72,13 +85,13 @@ class LoginPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => CheckinPage(checkInRepository: checkInRepository),
+                              builder: (context) => CheckInPage(userRepository: userRepository),
                               settings: RouteSettings(),
                             )
                           );
                         },
                         child:
-                          Text('Check In', style: TextStyle(color: Colors.black))
+                          Text('Check In', style: TextStyle(color: Colors.white))
                       )
                   ) 
                   //CheckIn()
@@ -88,7 +101,7 @@ class LoginPage extends StatelessWidget {
           ),
           
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
     );
   }
 }
