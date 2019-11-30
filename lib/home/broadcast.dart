@@ -35,7 +35,7 @@ class BroadCast extends StatelessWidget
                 Container(
                   height: 100,
                   width: MediaQuery.of(context).size.width / 1.2,
-                  color: Colors.grey,
+                  color: Colors.amber[100],
                   child: 
                   Padding(
                     padding: EdgeInsets.all(12),

@@ -20,9 +20,9 @@ class CheckinPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.black38,
+        backgroundColor: Colors.amber[600],
         title: Text(
-            "Checkin",
+            "Check into class",
             style: headerTextStyle,
         ),
       ),

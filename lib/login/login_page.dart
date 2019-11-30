@@ -38,7 +38,7 @@ class ShowHideFormState extends State<ShowHideForm>{
                 width: double.infinity,
               child:
                 ButtonTheme(
-                  height: 120,
+                  height: 100,
 
                   child: FlatButton.icon(
                     color: Colors.green,
@@ -54,7 +54,7 @@ class ShowHideFormState extends State<ShowHideForm>{
                 width: double.infinity,
                 child:
                 ButtonTheme(
-                    height: 120,
+                    height: 100,
 
                     child: FlatButton.icon(
                         color: Colors.green,

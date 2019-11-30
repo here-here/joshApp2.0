@@ -41,7 +41,7 @@ class _RegisterFormState extends State<RegisterForm>{
         children: <Widget>[
           TextFormField(
             decoration: InputDecoration(
-              labelText: 'Username'
+              labelText: 'Userna2me'
             ),
             validator: (String value) {
               if (value.trim().isEmpty) {

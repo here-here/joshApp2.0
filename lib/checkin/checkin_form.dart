@@ -45,13 +45,15 @@ class _checkinFormState extends State<CheckinForm> {
                     padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
                     child:
                     TextFormField(
-                      decoration: InputDecoration(
-                        hintText: 'PID',
-                        hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
-                      //  fillColor: Colors.black,
-                        focusColor: Colors.white,
-                        hoverColor: Colors.white,
-                        filled: true,
+                      decoration: new InputDecoration(
+                        labelText: "Enter PID",
+                        fillColor: Colors.white,
+                        border: new OutlineInputBorder(
+                          borderRadius: new BorderRadius.circular(25.0),
+                          borderSide: new BorderSide(
+                          ),
+                        ),
+                        //fillColor: Colors.green
                       ),
                       controller: _pidController,
                     ),
@@ -60,15 +62,16 @@ class _checkinFormState extends State<CheckinForm> {
                     padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 0.0),
                     child:                   
                       TextFormField(
-                      decoration: InputDecoration(
-                        hintText: 'Class ID',
-                        hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
-                        border: InputBorder.none,
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
-                          )
-                        ),   
+                        decoration: new InputDecoration(
+                        labelText: "Enter Class ID",
+                        fillColor: Colors.white,
+                        border: new OutlineInputBorder(
+                        borderRadius: new BorderRadius.circular(25.0),
+                        borderSide: new BorderSide(
+                        ),
+                        ),
+                        //fillColor: Colors.green
+                        ),
                       controller: _classController,
                       ),
                     ),

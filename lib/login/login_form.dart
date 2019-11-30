@@ -45,36 +45,49 @@ class _LoginFormState extends State<LoginForm> {
                     padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
                     child:
                     TextFormField(
-                      decoration: InputDecoration(
-                        hintText: 'Username',
-                        hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
-                        focusColor: Colors.white,
-                        hoverColor: Colors.white,
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.yellow[400], width: 2.0)
-                        )
+                      decoration: new InputDecoration(
+                        labelText: "Enter Username",
+                        fillColor: Colors.white,
+                        border: new OutlineInputBorder(
+                          borderRadius: new BorderRadius.circular(25.0),
+                          borderSide: new BorderSide(
+                          ),
+                        ),
+                        //fillColor: Colors.green
                       ),
+                      validator: (val) {
+                        if(val.length==0) {
+                          return "Username cannot be empty";
+                        }else{
+                          return null;
+                        }
+                      },
                       controller: _usernameController,
+                     // keyboardType: TextInputType.emailAddress,
+                      style: new TextStyle(
+                        fontFamily: "Poppins",
+                      ),
                     ),
+
+
+
+
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 0.0),
+                    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 5.0),
                     child:                   
                       TextFormField(
-                      decoration: InputDecoration(
-                        hintText: 'Password',
-                        hintStyle: TextStyle(fontSize: 15.0, color: Colors.yellow[400]),
-                        border: InputBorder.none,
-                        focusColor: Colors.white,
-                        hoverColor: Colors.white,
-                         //labelStyle: headerTextStyle.copyWith(color: Colors.white),
-                         //hintStyle: headerTextStyle.copyWith(color: Colors.white),
-                         //prefixIcon: Icon(Icons.vpn_key),
-                        // fillColor: Colors.grey,
-                        filled: true,
-
-                        ),   
+                        decoration: new InputDecoration(
+                          labelText: "Enter Password",
+                          fillColor: Colors.white,
+                          border: new OutlineInputBorder(
+                          //  color: Colors.orange,
+                            borderRadius: new BorderRadius.circular(25.0),
+                            borderSide: new BorderSide( color: Colors.yellow
+                            ),
+                          ),
+                       //   fillColor: Colors.green
+                        ),
                       controller: _passwordController,
                       obscureText: true,
                       ),

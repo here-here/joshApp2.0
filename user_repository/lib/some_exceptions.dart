@@ -6,6 +6,6 @@ class ApiError implements Exception {
   }
 @override
   String toString(){
-    return "Login failed";
+    return "Request failed";
   }
 }
