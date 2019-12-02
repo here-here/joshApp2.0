@@ -1,163 +1,268 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-MERGED from [:get_version] /media/space/joshApp2.0/build/get_version/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:path_provider] /media/space/joshApp2.0/build/path_provider/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:package_info] /media/space/joshApp2.0/build/package_info/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/c171dd561b0296d92c416c916367e5fc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/a031953172b009e126321208aaa75322/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/5ba0f5c2a3515796e00144ea47b567e3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/938c6f4cd39cbf8ec09aa712972842e4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/8395727ec5d2493d8da0c079dcecbb0e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/c31ab6abed4dc9c8631176647fa1ee42/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/6e48db42727fd15bb05d3c86d4fde332/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d47c5a675c2c14636e9be516e5903ba4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/4e20f687d526fa4b4dca7cb25ec1db6c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/97ffa7d6c8a45b067aedd78a5d84c560/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c78ec627a23379e06d9a520eb11a9852/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/AndroidManifest.xml:17:1-24:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b5e2e28fd44d3b2191b4d0605f477ca4/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ae9a06a3b8eab828cef12be521046e0f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c2a19de7e4f7708fac64b5b3882be995/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/27610627ffb9787c76a1fc4d65d97d02/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/465bc5a508eafc770a958f4e9fff9b43/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/054475bc550a8f5f7248bb4c73ea2ed8/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5fe41b808d98146cd093c85846de2689/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/cd4757c3f8cb5027c70cd12ae4d68453/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fd35b9e1b20a6cc2787a7c423ee7a167/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/573202d52806f865879ab3234cf2d3b9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7176e4116deaa1c0f153811175c56d9b/AndroidManifest.xml:17:1-22:12
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+MERGED from [:get_version] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\get_version\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:flutter_beacon] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\flutter_beacon\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\path_provider\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:package_info] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\package_info\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:device_info] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\device_info\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\46ea4658f2a469430d195c5361a04400\AndroidManifest.xml:17:1-22:12
+MERGED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:2:1-58:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\331cf5c22b10deeed8b5c4e04127fccc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\5a88b3fc4cf46383eb481a8b7edbf1a8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\5fa8a8c9b416e77ba76d19ec2f9b6856\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\3aa5e61bc702e6ecaf5e528aed29b71f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\bc781192de867157515a2528be2a3e3d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\56a5e31d1e60b63c3227bbb21afc80d8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\2eb353002ba4b72163f20f787c6fd6ea\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\a71ed36cd34730ad071cf9fbd2c419d9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\39e40995024a695ad2101d78698f2fe7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\b267f275f3d75261571ace22f9eb214f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\31cb1a15918d0f6e56bfca624c3b4d60\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\e35b5cdd634025b30630a03c00e16a33\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\b387078e7b03885bbd30e4e1695df3a7\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\76fe9c58341d9883160f5c83aed1f355\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\abbd704acc4cd0dc6a6306577dc7fb9b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\9fb72509d14dc1bc63169d698e2f349e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\85ed20712aa70405d5dd607e01ef39c0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\8f38c7fa3e8af0c3146741586589e7e0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\d72a178594c1b6d42a159dba7d655669\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\ce17b6b949db463d421c756434364aff\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\eb49e6cc1e801079b388e895a84e68f4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\f8f33331b7e1adeb754e9116c7a6c087\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\1ead92bd1676c7e4f1ce8c2bdfe14bd7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\baee7e75f2d418dbce61bcc1e9fe64b1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
 	package
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:2:5-39
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:1-39:12
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:15:5-38:19
-MERGED from [com.android.support:support-compat:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/054475bc550a8f5f7248bb4c73ea2ed8/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/054475bc550a8f5f7248bb4c73ea2ed8/AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:15:5-38:19
+MERGED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:20:5-56:19
+MERGED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:20:5-56:19
+MERGED from [androidx.core:core:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\b387078e7b03885bbd30e4e1695df3a7\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\b387078e7b03885bbd30e4e1695df3a7\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\76fe9c58341d9883160f5c83aed1f355\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\76fe9c58341d9883160f5c83aed1f355\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/AndroidManifest.xml:22:18-91
+		ADDED from [androidx.core:core:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\b387078e7b03885bbd30e4e1695df3a7\AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:17:9-38
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:17:9-38
 	android:icon
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:18:9-43
 	android:name
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:16:9-57
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:16:9-57
 activity#com.example.flutterlogin.MainActivity
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:19:9-37:20
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:19:9-37:20
 	android:launchMode
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:21:13-43
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:21:13-43
 	android:hardwareAccelerated
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:24:13-47
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:24:13-47
 	android:windowSoftInputMode
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:25:13-55
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:25:13-55
 	android:configChanges
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:23:13-137
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:23:13-137
 	android:theme
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:22:13-47
 	android:name
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:20:13-41
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:20:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:30:13-32:40
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:30:13-32:40
 	android:value
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:32:17-37
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:32:17-37
 	android:name
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:31:17-82
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:31:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:33:13-36:29
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:34:17-68
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:34:17-68
 	android:name
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:35:17-76
+ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml:35:27-74
 uses-sdk
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-MERGED from [:get_version] /media/space/joshApp2.0/build/get_version/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:get_version] /media/space/joshApp2.0/build/get_version/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:path_provider] /media/space/joshApp2.0/build/path_provider/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /media/space/joshApp2.0/build/path_provider/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-44
-MERGED from [:package_info] /media/space/joshApp2.0/build/package_info/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-44
-MERGED from [:package_info] /media/space/joshApp2.0/build/package_info/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/c171dd561b0296d92c416c916367e5fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/c171dd561b0296d92c416c916367e5fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/a031953172b009e126321208aaa75322/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/a031953172b009e126321208aaa75322/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/5ba0f5c2a3515796e00144ea47b567e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/5ba0f5c2a3515796e00144ea47b567e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/938c6f4cd39cbf8ec09aa712972842e4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/938c6f4cd39cbf8ec09aa712972842e4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/8395727ec5d2493d8da0c079dcecbb0e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/8395727ec5d2493d8da0c079dcecbb0e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/c31ab6abed4dc9c8631176647fa1ee42/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/c31ab6abed4dc9c8631176647fa1ee42/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/6e48db42727fd15bb05d3c86d4fde332/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/6e48db42727fd15bb05d3c86d4fde332/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d47c5a675c2c14636e9be516e5903ba4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/d47c5a675c2c14636e9be516e5903ba4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/4e20f687d526fa4b4dca7cb25ec1db6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/4e20f687d526fa4b4dca7cb25ec1db6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/97ffa7d6c8a45b067aedd78a5d84c560/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/97ffa7d6c8a45b067aedd78a5d84c560/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c78ec627a23379e06d9a520eb11a9852/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c78ec627a23379e06d9a520eb11a9852/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b5e2e28fd44d3b2191b4d0605f477ca4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b5e2e28fd44d3b2191b4d0605f477ca4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ae9a06a3b8eab828cef12be521046e0f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ae9a06a3b8eab828cef12be521046e0f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c2a19de7e4f7708fac64b5b3882be995/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c2a19de7e4f7708fac64b5b3882be995/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/27610627ffb9787c76a1fc4d65d97d02/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/27610627ffb9787c76a1fc4d65d97d02/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/465bc5a508eafc770a958f4e9fff9b43/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/nod/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/465bc5a508eafc770a958f4e9fff9b43/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/054475bc550a8f5f7248bb4c73ea2ed8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/054475bc550a8f5f7248bb4c73ea2ed8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5fe41b808d98146cd093c85846de2689/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/5fe41b808d98146cd093c85846de2689/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/cd4757c3f8cb5027c70cd12ae4d68453/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/cd4757c3f8cb5027c70cd12ae4d68453/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fd35b9e1b20a6cc2787a7c423ee7a167/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fd35b9e1b20a6cc2787a7c423ee7a167/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/573202d52806f865879ab3234cf2d3b9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/573202d52806f865879ab3234cf2d3b9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7176e4116deaa1c0f153811175c56d9b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/nod/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7176e4116deaa1c0f153811175c56d9b/AndroidManifest.xml:20:5-44
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+MERGED from [:get_version] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\get_version\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:get_version] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\get_version\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_beacon] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\flutter_beacon\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_beacon] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\flutter_beacon\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\path_provider\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\path_provider\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:package_info] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\package_info\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:package_info] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\package_info\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:device_info] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\device_info\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [:device_info] C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\build\device_info\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\46ea4658f2a469430d195c5361a04400\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\46ea4658f2a469430d195c5361a04400\AndroidManifest.xml:20:5-44
+MERGED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:7:5-9:41
+MERGED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\331cf5c22b10deeed8b5c4e04127fccc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\331cf5c22b10deeed8b5c4e04127fccc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\5a88b3fc4cf46383eb481a8b7edbf1a8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\5a88b3fc4cf46383eb481a8b7edbf1a8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\5fa8a8c9b416e77ba76d19ec2f9b6856\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\5fa8a8c9b416e77ba76d19ec2f9b6856\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\3aa5e61bc702e6ecaf5e528aed29b71f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\3aa5e61bc702e6ecaf5e528aed29b71f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\bc781192de867157515a2528be2a3e3d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\bc781192de867157515a2528be2a3e3d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\56a5e31d1e60b63c3227bbb21afc80d8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\56a5e31d1e60b63c3227bbb21afc80d8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\2eb353002ba4b72163f20f787c6fd6ea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\2eb353002ba4b72163f20f787c6fd6ea\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\a71ed36cd34730ad071cf9fbd2c419d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\a71ed36cd34730ad071cf9fbd2c419d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\39e40995024a695ad2101d78698f2fe7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\39e40995024a695ad2101d78698f2fe7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\b267f275f3d75261571ace22f9eb214f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\b267f275f3d75261571ace22f9eb214f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\31cb1a15918d0f6e56bfca624c3b4d60\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\31cb1a15918d0f6e56bfca624c3b4d60\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\e35b5cdd634025b30630a03c00e16a33\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\e35b5cdd634025b30630a03c00e16a33\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\b387078e7b03885bbd30e4e1695df3a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\b387078e7b03885bbd30e4e1695df3a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\76fe9c58341d9883160f5c83aed1f355\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\76fe9c58341d9883160f5c83aed1f355\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\abbd704acc4cd0dc6a6306577dc7fb9b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\abbd704acc4cd0dc6a6306577dc7fb9b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\9fb72509d14dc1bc63169d698e2f349e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\9fb72509d14dc1bc63169d698e2f349e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\85ed20712aa70405d5dd607e01ef39c0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\85ed20712aa70405d5dd607e01ef39c0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\8f38c7fa3e8af0c3146741586589e7e0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\8f38c7fa3e8af0c3146741586589e7e0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\d72a178594c1b6d42a159dba7d655669\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\d72a178594c1b6d42a159dba7d655669\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\ce17b6b949db463d421c756434364aff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\ce17b6b949db463d421c756434364aff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\eb49e6cc1e801079b388e895a84e68f4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\eb49e6cc1e801079b388e895a84e68f4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\f8f33331b7e1adeb754e9116c7a6c087\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\f8f33331b7e1adeb754e9116c7a6c087\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\1ead92bd1676c7e4f1ce8c2bdfe14bd7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\1ead92bd1676c7e4f1ce8c2bdfe14bd7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\baee7e75f2d418dbce61bcc1e9fe64b1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\baee7e75f2d418dbce61bcc1e9fe64b1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		ADDED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
-		INJECTED from /media/space/joshApp2.0/android/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Steven\Desktop\flutter_beacon-master\joshApp2.0\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:12:9-52
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:15:9-58
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:18:22-78
+receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:21:19-87
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:23:25-76
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:24:17-87
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:24:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:25:17-90
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:25:25-87
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:29:9-34:38
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:31:13-35
+	android:label
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:34:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:32:13-37
+	android:isolatedProcess
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:33:13-44
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:30:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:36:13-70
+service#org.altbeacon.beacon.service.ScanJob
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:39:9-48:19
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:41:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:40:13-64
+meta-data#immediateScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:42:13-44:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:44:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:43:17-50
+meta-data#periodicScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:45:13-47:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:47:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:46:17-49
+service#org.altbeacon.bluetooth.BluetoothTestJob
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:49:9-55:19
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:50:13-68
+meta-data#jobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:52:13-54:46
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:54:17-43
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.3] C:\Users\Steven\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.16.3.aar\d14bdf20b29ba192f556ce3a2b4fb6a2\AndroidManifest.xml:53:17-37

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/space/joshApp2.0/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "C:\\Users\\Steven\\Desktop\\flutter_beacon-master\\joshApp2.0\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/home/nod/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6e10c42f5279a83d70e55b77fa63889d/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "C:\\Users\\Steven\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\b387078e7b03885bbd30e4e1695df3a7\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

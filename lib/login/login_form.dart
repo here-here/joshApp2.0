@@ -97,19 +97,19 @@ class _LoginFormState extends State<LoginForm> {
                         state is! LoginLoading ? _onLoginButtonPressed : null,
                     child: Text('Login'),
                   ),
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Register(),
-                          settings: RouteSettings(),
-                        )
-                      );
-                    },
-                    child: Text('Don\'t have an account? Register now', style: TextStyle(color: Colors.blue))
-                  ),
-                  
+//                  GestureDetector(
+//                    onTap: (){
+//                      Navigator.push(
+//                        context,
+//                        MaterialPageRoute(
+//                          builder: (context) => Register(),
+//                          settings: RouteSettings(),
+//                        )
+//                      );
+//                    },
+//                    child: Text('Don\'t have an account? Register now', style: TextStyle(color: Colors.blue))
+//                  ),
+//
                   Container(
                     child: state is LoginLoading
                         ? CircularProgressIndicator()

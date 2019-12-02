@@ -24,7 +24,7 @@ Future<List<Course>> fetchCourses(http.Client client) async {
     print(token);
       print("-------------");
   final response =
-      await client.get('http://10.0.2.2:80/api/classes/classes/',headers: headers);
+      await client.get('https://attendhere.com/api/classes/classes/',headers: headers);
     Map<String, String> args = {
       "body": response.body, 
       "token" : token
@@ -115,7 +115,7 @@ class CoursesList extends StatelessWidget {
                     children: <Widget>[
                       ListTile(
                         title: Text(Courses[index].title, style: headerTextStyle,overflow: TextOverflow.ellipsis,),
-                        subtitle: Text("Place holder", style: subHeaderTextStyle),
+                        subtitle: Text(" ", style: subHeaderTextStyle),
                       ),
                       ButtonTheme.bar(
                         // make buttons use the appropriate styles for cards
@@ -144,29 +144,29 @@ class CoursesList extends StatelessWidget {
                                   );
                                 },
                             ),
-                           FlatButton(
-                            //color: Colors.white,
-                            child: new Icon(Icons.assignment, color: Colors.white),
-                             onPressed: () {
-                                  // When the user taps the button, navigate to the specific route
-                                  // and provide the arguments as part of the RouteSettings.
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => BroadCast(),
-                                      // Pass the arguments as part of the RouteSettings. The
-                                      // ExtractArgumentScreen reads the arguments from these
-                                      // settings.
-                                      settings: RouteSettings(
-                                        arguments: ScreenArguments(
-                                          Courses[index].title,
-                                          Courses[index].token,
-                                        ),
-                                      ),
-                                    ),
-                                  );
-                                },
-                            ),
+//                           FlatButton(
+//                            //color: Colors.white,
+//                            child: new Icon(Icons.assignment, color: Colors.white),
+//                             onPressed: () {
+//                                  // When the user taps the button, navigate to the specific route
+//                                  // and provide the arguments as part of the RouteSettings.
+//                                  Navigator.push(
+//                                    context,
+//                                    MaterialPageRoute(
+//                                      builder: (context) => BroadCast(),
+//                                      // Pass the arguments as part of the RouteSettings. The
+//                                      // ExtractArgumentScreen reads the arguments from these
+//                                      // settings.
+//                                      settings: RouteSettings(
+//                                        arguments: ScreenArguments(
+//                                          Courses[index].title,
+//                                          Courses[index].token,
+//                                        ),
+//                                      ),
+//                                    ),
+//                                  );
+//                                },
+//                            ),
                           ],
                         ),
                       ),

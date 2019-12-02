@@ -21,7 +21,7 @@ class CheckInRepository {
 
 
   }) async {
-    String url = "http://10.0.2.2:80/api/classes/validateToken/";
+    String url = "https://attendhere.com/api/classes/validateToken/";
    
    
    Body b = Body(token: token, name: name, class_name:class_name, hwid: hwid, pid: pid);

@@ -44,7 +44,7 @@ class BroadCast extends StatelessWidget
                     alignment: Alignment.centerLeft,
                     child:
                     Text(
-                      "Rick\n" + args.title + " \n" + args.message,
+                      "Ready",
                        style: subHeaderTextStyle
                        )
                   )

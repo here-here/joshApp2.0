@@ -21,7 +21,7 @@ class UserRepository {
     @required String username,
     @required String password,
   }) async {
-    String url = "http://10.0.2.2:80/api/classes/token/";
+    String url = "https://attendhere.com/api/classes/token/";
     Body b = Body(password: password, username: username);
     User u = User(body: b, type: "login");
 

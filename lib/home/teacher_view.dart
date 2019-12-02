@@ -21,7 +21,7 @@ class TeacherView extends StatelessWidget {
       key: _scaffoldKey,
       appBar: new AppBar(
         backgroundColor: Colors.black38,
-        title: new Text("Hi, Teacher  "),
+        title: new Text("Hello  "),
         leading: new IconButton(
             icon: new Icon(Icons.apps),
             onPressed: () => _scaffoldKey.currentState.openDrawer())),
