@@ -21,6 +21,7 @@ class CheckinForm extends StatefulWidget {
 class _checkinFormState extends State<CheckinForm> {
   final _pidController = TextEditingController();
   final _classController = TextEditingController();
+  final _nameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -84,35 +85,71 @@ class _checkinFormState extends State<CheckinForm> {
                     controller: _classController,
                   ),
                 ),
+                Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                child:
+                TextFormField(
+                  decoration: new InputDecoration(
+                    labelText: "Enter Your Name",
+                    fillColor: Colors.white,
+                    border: new OutlineInputBorder(
+                      borderRadius: new BorderRadius.circular(25.0),
+                      borderSide: new BorderSide(
+                      ),
+                    ),
+                    //fillColor: Colors.green
+                  ),
+                  controller: _nameController,
+                )
+                ),
                 RaisedButton(
                   onPressed: () async {
-
-                    print(_pidController.text.length > 1);
-
                     // Check if text was entered
-                    if (_pidController.text.length > 0 &&_classController.text.length > 0) {
+                    if (_pidController.text.length > 0 &&_classController.text.length > 0 && _nameController.text.length > 1) {
                       /// navigate to search screen
                       var route = new MaterialPageRoute(
                         builder: (BuildContext context) =>
                         new MyApp(uuid: '39ed98ff-2900-441a-802f-9c398fc199d2',
                             pid: _pidController.text,
-                            classCode: _classController.text),
+                            classCode: _classController.text,
+                            name: _nameController.text),
                       );
-                      Navigator.push(context, route);
+                      var result = await Navigator.push(context, route);
+                      if (result == "checked in")
+                        Navigator.pop(context);
+                      else {
+                        return showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text("ERROR!", style: TextStyle(color: Colors.red), textAlign: TextAlign.center),
+                              content: Text(result),
+                              actions: <Widget>[
+                                FlatButton(
+                                  child: Text('Okay'),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                )
+                              ],
+                            );
+                          },
+                        );
+                      }
                     }
                     else {
                       return showDialog(
                         context: context,
                         builder: (context) {
                           return AlertDialog(
-                            content: Text("Please enter the values for both fields!"),
+                            content: Text("Please enter the values for all fields!"),
                           );
                         },
                       );
                     }
                     },
 
-                  child: Text('checkin'),
+                  child: Text('Check In'),
                 ),
 
                 Container(
@@ -133,17 +170,9 @@ class MyApp extends StatefulWidget {
   final String uuid;
   final String pid;
   final String classCode;
-//  final CheckInRepository checkInRepository;
-//  final AuthenticationBloc authenticationBloc;
+  final String name;
 
-//  CheckinBloc({
-//    @required this.checkInRepository,
-//    @required this.authenticationBloc,
-//  })
-//      : assert(checkInRepository != null),
-//        assert(authenticationBloc != null);
-
-  MyApp({Key key, this.uuid, this.pid, this.classCode}) : super (key: key);
+  MyApp({Key key, this.uuid, this.pid, this.classCode, this.name}) : super (key: key);
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -156,14 +185,11 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   final StreamController<BluetoothState> streamController = StreamController();
   StreamSubscription<BluetoothState> _streamBluetooth;
   StreamSubscription<RangingResult> _streamRanging;
-//  final _regionBeacons = <Region, List<Beacon>>{};
   final _beacons = <Beacon>[];
   bool authorizationStatusOk = false;
   bool locationServiceEnabled = false;
   bool bluetoothEnabled = false;
   bool started;
-
-//  BeaconBroadcast beaconBroadcast = BeaconBroadcast();
 
   @override
   void initState() {
@@ -261,22 +287,26 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                 print("Navigating");
 
                 navigate();
+
               }
             }
           }
         });
   }
 
-  navigate(){
-    var route1 = new MaterialPageRoute(
-        builder: (BuildContext context) =>
-        new hitAPI(uuid: widget.uuid,
-          pid: widget.pid,
-          classCode: widget.classCode,
-          hwid: id,
-        ));
-    Navigator.push(context, route1);
-    Navigator.pop(context);
+  navigate() async {
+    print("hitting!");
+    var url = 'https://www.attendhere.com/api/classes/validateToken';
+    var response = await http.post(url, body: {'token': widget.uuid, 'name': widget.name, 'hwid': id, 'pid': widget.pid});
+    if (response.statusCode == 200) {
+      print("successfully hit");
+      Navigator.pop(context, "success!");
+    }
+    else {
+      print("post error");
+      print(response.body);
+      Navigator.pop(context, "Please try again!\nIf the issue persists please inform the Professor!");
+    }
   }
 
   pauseScanBeacon() async {
@@ -395,87 +425,5 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     }
 
     return retVal;
-  }
-}
-
-class hitAPI extends StatefulWidget {
-  final String uuid;
-  final String pid;
-  final String classCode;
-  final String hwid;
-
-  hitAPI({Key key, this.uuid, this.pid, this.classCode, this.hwid}) : super (key: key);
-
-  @override
-  hitAPIworker createState() => hitAPIworker();
-}
-
-class hitAPIworker extends State<hitAPI> with WidgetsBindingObserver {
-
-
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => doCheckinWorker());
-  }
-
-  doCheckinWorker() async {
-    print("hitting!");
-    var url = 'https://www.attendhere.com/api/classes/validateToken';
-    var response = await http.post(url, body: {'token': widget.uuid, 'name': widget.hwid, 'hwid': widget.hwid, 'pid': widget.pid});
-    if (response.statusCode == 200) {
-      print("successfully hit");
-      Navigator.pop(context);
-    }
-    else {
-      print("post error");
-      print(response.body);
-//      showDialog(
-//        context: context,
-//        builder: (context) {
-//          return AlertDialog(
-//            content: Text("Post attemp unsuccessful!!!"),
-//          );
-//        },
-//      );
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.white,
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
-      home: Scaffold(
-          body: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/images/knighttro.jpg"),
-                  fit: BoxFit.cover),
-            ),
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-//                  RaisedButton(
-//                    color: Colors.red,
-//                    child: Text("Post"),
-//                    onPressed: () async {
-//                      await doCheckinWorker();
-//                    },
-//                  )
-                ],
-              ),
-            ),
-          )
-
-      ),
-    );
   }
 }
