@@ -49,33 +49,6 @@ class Settings extends StatelessWidget{
 
         },
       ),
-      ListTile(
-        title: Text('Reports'),
-        onTap: () {
-          // Update the state of the app.
-          // ...
-          Navigator.pop(context);
-
-        },
-      ),
-      ListTile(
-        title: Text('Help'),
-        onTap: () {
-          // Update the state of the app.
-          // ...
-          Navigator.pop(context);
-
-        },
-      ),
-      ListTile(
-        title: Text('Settings'),
-        onTap: () {
-          // Update the state of the app.
-          // ...
-          Navigator.pop(context);
-
-        },
-      ),
     ],
   ),
 );
